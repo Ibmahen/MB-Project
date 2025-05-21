@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@layer base {
+  body {
+    @apply bg-[#1E1E1E] text-white font-[Archivo];
+  }
+
+  button {
+    @apply text-black font-[Archivo] rounded-[8px];
+  }
+}
+
+@layer components {
+  .nav {
+    @apply text-black flex justify-between items-center bg-white rounded-[8px] min-w-[694px] min-h-[65px] mx-[405px] sticky top-0 mt-5;
+  }
+
+  .nav-btn {
+    @apply text-black rounded-[8px] mx-10 py-2;
+  }
+  .hero {
+    @apply font-[Archivo] text-center min-h-screen flex flex-col justify-center items-center;
+  }
+
+  .hero-title {
+    @apply text-[100px] font-bold font-["Shantell_Sans"] text-center;
+  }
+  .hero-subtitle {
+    @apply text-[20px] font-["Poppins"] mt-10 text-center max-w-[608px];
+  }
+}
