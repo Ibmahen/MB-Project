@@ -1,6 +1,8 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "tailwindcss";
+
+@tailwind utilities;
 
 @layer base {
   body {
@@ -13,13 +15,14 @@
 }
 
 @layer components {
-  .nav {
-    @apply text-black flex justify-between items-center bg-white rounded-[8px] min-w-[694px] min-h-[65px] mx-[405px] sticky top-0 mt-5;
+  .nav-side {
+    @apply  flex bg-white items-center justify-center rounded-[8px] w-[147px] h-[65px]; 
   }
 
-  .nav-btn {
-    @apply text-black rounded-[8px] mx-10 py-2;
+  .nav-center {
+    @apply flex justify-evenly items-center bg-white rounded-[8px] w-[694px] h-[65px];
   }
+
   .hero {
     @apply font-[Archivo] text-center min-h-screen flex flex-col justify-center items-center;
   }
@@ -29,5 +32,9 @@
   }
   .hero-subtitle {
     @apply text-[20px] font-["Poppins"] mt-10 text-center max-w-[608px];
+  }
+
+  .center-kabeh {
+    @apply flex items-center justify-center ;
   }
 }
